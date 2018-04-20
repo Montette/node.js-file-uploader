@@ -16,9 +16,9 @@ exports.upload = function (request, response) {
         filename = files.upload.name;
         var ex = path.extname(filename);
         filename = fields.title ? fields.title + ex : filename;
-        var properEx = '.jpg' || '.png' || '.jpeg';
+        var properEx = ['.jpg', '.png', '.jpeg'];
         console.log(ex);
-        if (ex == properEx) {
+        if (properEx.indexOf(ex) !== -1) {
             fs.readFile('templates/upload.html', function (err, html2) {
                 fs.renameSync(files.upload.path, filePath + filename);
                 response.writeHead(200, {
