@@ -1,0 +1,25 @@
+
+a {
+    color: white;
+    
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.title {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.btn-primary, .btn-secondary {
+    width: 106px;
+}
+
+
+.uploadImg {
+    margin-bottom: 50px;
+    border: 1px solid grey;
+}

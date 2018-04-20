@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <h1 class="title text-center" id="mainTitle">Wgraj plik</h1>
+                <form action="/upload" enctype="multipart/form-data" method="post">
+                    <label for="fileName">Tytuł pliku</label>
+                    <input type="text" class="form-control" name="title" id="fileName">
+                    <br>
+                    <label for="getFile">Plik</label>
+                    <input type="file" class="form-control-file" name="upload" multiple="multiple" id="getFile"><br>
+                    <input type="submit" class="btn btn-primary" value="Wyślij">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
